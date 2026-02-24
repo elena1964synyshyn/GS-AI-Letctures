@@ -9,149 +9,381 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
 
-  <div class="container">
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">GS<span>.</span>Materials</div>
+    <ul class="nav-links">
+      <li><a href="#materials">Матеріали</a></li>
+      <li><a href="#features">Про нас</a></li>
+      <li><a href="#cta" class="nav-cta">Розпочати</a></li>
+    </ul>
+  </nav>
 
-    <h1 class="page-title">Welcome to the GS Materials</h1>
-
-    <!-- Toolbar -->
-    <div class="toolbar">
-      <span class="found-label">Found 158 rentals</span>
-
-      <div class="search-wrap">
-        <input class="search-input" type="text" placeholder="Search by articles...">
-        <span class="search-icon">
-
-        </span>
-      </div>
-
-      <div class="view-btns">
-        <!-- Grid icon via path -->
-        <button class="view-btn view-btn--dark" title="Grid view">
-          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M1 1h6v6H1zM9 1h6v6H9zM1 9h6v6H1zM9 9h6v6H9z" />
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <div class="hero-badge">Нові матеріали щотижня</div>
+      <h1>Навчальні<br>матеріали для <em>React</em> розробників</h1>
+      <p>Лекції, Q&A сесії та практичні завдання від топових менторів. Поглиби знання компонентної архітектури, стану та
+        хуків.</p>
+      <div class="hero-actions">
+        <a href="#materials" class="btn-primary">
+          Переглянути матеріали
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7" />
           </svg>
-        </button>
-        <!-- List icon via path -->
-        <button class="view-btn view-btn--orange" title="List view">
-          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M1 2h14v2.5H1zM1 6.8h14v2.5H1zM1 11.5h14V14H1z" />
-          </svg>
-        </button>
+        </a>
+        <a href="#features" class="btn-ghost">Дізнатись більше</a>
       </div>
     </div>
 
-    <!-- Cards Grid -->
-    <div class="cards-grid">
-
-      <!-- Card 1 (with description) -->
-      <div class="card">
+    <div class="hero-visual">
+      <div class="hero-card big">
         <div class="card-img">
-
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M3 9h18M9 21V9" />
+          </svg>
         </div>
         <div class="card-body">
-          <h2 class="card-title">Лекція №3. Q/A сесія з React</h2>
-          <p class="card-desc">На цій лекції відбудеться Q/A сесія, присвячена розробці з використанням React.
-            Розглянемо поширені запитання щодо компонентної архітектури, стану, хуків</p>
-          <a href="#" class="btn-detail">
-            Детальніше
+          <h4>Лекція №3. Q/A сесія з React</h4>
+          <p>Розглянемо поширені питання щодо компонентної архітектури, стану, хуків</p>
+          <span class="card-tag">React</span>
+        </div>
+      </div>
+      <div class="hero-card mid">
+        <div class="card-img">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M3 9h18M9 21V9" />
+          </svg>
+        </div>
+        <div class="card-body">
+          <h4>useState та useEffect глибоко</h4>
+          <span class="card-tag">Hooks</span>
+        </div>
+      </div>
+      <div class="hero-card small">
+        <div class="card-img">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M3 9h18M9 21V9" />
+          </svg>
+        </div>
+        <div class="card-body">
+          <h4>Context API</h4>
+          <span class="card-tag">State</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          </a>
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-num">158<span>+</span></div>
+      <div class="stat-label">Матеріалів</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">24<span>+</span></div>
+      <div class="stat-label">Лекторів</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">3.2<span>k</span></div>
+      <div class="stat-label">Студентів</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">98<span>%</span></div>
+      <div class="stat-label">Задоволені</div>
+    </div>
+  </div>
+
+  <!-- MATERIALS -->
+  <section class="section" id="materials">
+    <div class="section-header">
+      <div>
+        <div class="section-label">Каталог</div>
+        <h2 class="section-title">Навчальні матеріали</h2>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <span class="found-label">Знайдено 158 матеріалів</span>
+      <div class="toolbar-right">
+        <div class="search-wrap">
+          <input class="search-input" type="text" placeholder="Пошук по матеріалах...">
+          <span class="search-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.35-4.35" />
+            </svg>
+          </span>
+        </div>
+        <div class="view-toggle">
+          <button class="view-btn active" title="Сітка">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <rect x="3" y="3" width="7" height="7" rx="1" />
+              <rect x="14" y="3" width="7" height="7" rx="1" />
+              <rect x="3" y="14" width="7" height="7" rx="1" />
+              <rect x="14" y="14" width="7" height="7" rx="1" />
+            </svg>
+          </button>
+          <button class="view-btn" title="Список">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <line x1="8" y1="6" x2="21" y2="6" />
+              <line x1="8" y1="12" x2="21" y2="12" />
+              <line x1="8" y1="18" x2="21" y2="18" />
+              <line x1="3" y1="6" x2="3.01" y2="6" />
+              <line x1="3" y1="12" x2="3.01" y2="12" />
+              <line x1="3" y1="18" x2="3.01" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="materials-grid">
+
+      <!-- Card 1 (expanded with description) -->
+      <div class="material-card">
+        <div class="mat-img">
+          <span class="mat-number">№3</span>
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M3 9h18M9 21V9" />
+          </svg>
+          <div class="mat-img-overlay"></div>
+        </div>
+        <div class="mat-body">
+          <h3>Лекція №3. Q/A сесія з React</h3>
+          <p>На цій лекції відбудеться Q/A сесія, присвячена розробці з використанням React. Розглянемо поширені
+            запитання щодо компонентної архітектури, стану, хуків</p>
+          <div class="mat-footer">
+            <a href="#" class="mat-btn">
+              Детальніше
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <path d="M7 17L17 7M7 7h10v10" />
+              </svg>
+            </a>
+            <span class="mat-meta">45 хв</span>
+          </div>
         </div>
       </div>
 
       <!-- Card 2 -->
-      <div class="card">
-        <div class="card-img">
-
+      <div class="material-card">
+        <div class="mat-img">
+          <span class="mat-number">№4</span>
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M3 9h18M9 21V9" />
+          </svg>
+          <div class="mat-img-overlay"></div>
         </div>
-        <div class="card-body">
-          <h2 class="card-title">Лекція №3. Q/A сесія з React</h2>
-          <p class="card-desc">На цій лекції відбудеться Q/A сесія, присвячена розробці з використанням React.
-            Розглянемо поширені запитання щодо компонентної архітектури, стану, хуків</p>
-          <a href="#" class="btn-detail">
-            Детальніше
-
-          </a>
+        <div class="mat-body">
+          <h3>Лекція №3. Q/A сесія з React</h3>
+          <div class="mat-footer">
+            <a href="#" class="mat-btn">
+              Детальніше
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <path d="M7 17L17 7M7 7h10v10" />
+              </svg>
+            </a>
+            <span class="mat-meta">60 хв</span>
+          </div>
         </div>
       </div>
 
       <!-- Card 3 -->
-      <div class="card">
-        <div class="card-img">
-
+      <div class="material-card">
+        <div class="mat-img">
+          <span class="mat-number">№5</span>
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M3 9h18M9 21V9" />
+          </svg>
+          <div class="mat-img-overlay"></div>
         </div>
-        <div class="card-body">
-          <h2 class="card-title">Лекція №3. Q/A сесія з React</h2>
-          <p class="card-desc">На цій лекції відбудеться Q/A сесія, присвячена розробці з використанням React.
-            Розглянемо поширені запитання щодо компонентної архітектури, стану, хуків</p>
-          <a href="#" class="btn-detail">
-            Детальніше
-
-          </a>
+        <div class="mat-body">
+          <h3>Лекція №3. Q/A сесія з React</h3>
+          <div class="mat-footer">
+            <a href="#" class="mat-btn">
+              Детальніше
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <path d="M7 17L17 7M7 7h10v10" />
+              </svg>
+            </a>
+            <span class="mat-meta">30 хв</span>
+          </div>
         </div>
       </div>
 
       <!-- Card 4 -->
-      <div class="card">
-        <div class="card-img">
-
+      <div class="material-card">
+        <div class="mat-img">
+          <span class="mat-number">№6</span>
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M3 9h18M9 21V9" />
+          </svg>
+          <div class="mat-img-overlay"></div>
         </div>
-        <div class="card-body">
-          <h2 class="card-title">Лекція №3. Q/A сесія з React</h2>
-          <p class="card-desc">На цій лекції відбудеться Q/A сесія, присвячена розробці з використанням React.
-            Розглянемо поширені запитання щодо компонентної архітектури, стану, хуків</p>
-          <a href="#" class="btn-detail">
-            Детальніше
-
-          </a>
+        <div class="mat-body">
+          <h3>Лекція №3. Q/A сесія з React</h3>
+          <div class="mat-footer">
+            <a href="#" class="mat-btn">
+              Детальніше
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <path d="M7 17L17 7M7 7h10v10" />
+              </svg>
+            </a>
+            <span class="mat-meta">50 хв</span>
+          </div>
         </div>
       </div>
 
       <!-- Card 5 -->
-      <div class="card">
-        <div class="card-img">
-
+      <div class="material-card">
+        <div class="mat-img">
+          <span class="mat-number">№7</span>
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M3 9h18M9 21V9" />
+          </svg>
+          <div class="mat-img-overlay"></div>
         </div>
-        <div class="card-body">
-          <h2 class="card-title">Лекція №3. Q/A сесія з React</h2>
-          <p class="card-desc">На цій лекції відбудеться Q/A сесія, присвячена розробці з використанням React.
-            Розглянемо поширені запитання щодо компонентної архітектури, стану, хуків</p>
-          <a href="#" class="btn-detail">
-            Детальніше
-
-          </a>
+        <div class="mat-body">
+          <h3>Лекція №3. Q/A сесія з React</h3>
+          <div class="mat-footer">
+            <a href="#" class="mat-btn">
+              Детальніше
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <path d="M7 17L17 7M7 7h10v10" />
+              </svg>
+            </a>
+            <span class="mat-meta">40 хв</span>
+          </div>
         </div>
       </div>
 
       <!-- Card 6 -->
-      <div class="card">
-        <div class="card-img">
-
+      <div class="material-card">
+        <div class="mat-img">
+          <span class="mat-number">№8</span>
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M3 9h18M9 21V9" />
+          </svg>
+          <div class="mat-img-overlay"></div>
         </div>
-        <div class="card-body">
-          <h2 class="card-title">Лекція №3. Q/A сесія з React</h2>
-          <p class="card-desc">На цій лекції відбудеться Q/A сесія, присвячена розробці з використанням React.
-            Розглянемо поширені запитання щодо компонентної архітектури, стану, хуків</p>
-          <a href="#" class="btn-detail">
-            Детальніше
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <line x1="7" y1="17" x2="17" y2="7" />
-              <polyline points="7 7 17 7 17 17" />
-            </svg>
-          </a>
+        <div class="mat-body">
+          <h3>Лекція №3. Q/A сесія з React</h3>
+          <div class="mat-footer">
+            <a href="#" class="mat-btn">
+              Детальніше
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <path d="M7 17L17 7M7 7h10v10" />
+              </svg>
+            </a>
+            <span class="mat-meta">55 хв</span>
+          </div>
         </div>
       </div>
 
     </div>
-    <!-- /cards-grid -->
+  </section>
 
+  <!-- FEATURES -->
+  <section class="section" id="features" style="padding-top:0">
+    <div class="section-header">
+      <div>
+        <div class="section-label">Переваги</div>
+        <h2 class="section-title">Чому обирають нас</h2>
+      </div>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+            <polyline points="22 4 12 14.01 9 11.01" />
+          </svg>
+        </div>
+        <h3>Структуровані лекції</h3>
+        <p>Чіткий план кожної лекції з поясненнями, прикладами та практичними завданнями.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+          </svg>
+        </div>
+        <h3>Живі Q&A сесії</h3>
+        <p>Ставте запитання ментору в реальному часі. Розбираємо складні кейси разом з аудиторією.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="16 18 22 12 16 6" />
+            <polyline points="8 6 2 12 8 18" />
+          </svg>
+        </div>
+        <h3>Реальні проекти</h3>
+        <p>Матеріали побудовані на реальних задачах з продакшн-коду, а не синтетичних прикладах.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-section" id="cta">
+    <h2>Готові поглибити знання?</h2>
+    <p>Приєднуйтесь до тисяч розробників, які вже прокачали свої навички з GS Materials.</p>
+    <a href="#materials" class="btn-primary" style="font-size:1rem; padding: 1rem 2.5rem;">
+      Розпочати безкоштовно
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7" />
+      </svg>
+    </a>
   </div>
-  <!-- /container -->
 
+  <!-- FOOTER -->
+  <footer>
+    <div class="nav-logo" style="font-family:'Unbounded',sans-serif;font-size:0.9rem;font-weight:800;">GS<span
+        style="color:var(--accent)">.</span>Materials</div>
+    <div style="display:flex;gap:2rem;">
+      <a href="#">Умови використання</a>
+      <a href="#">Конфіденційність</a>
+      <a href="#">Контакти</a>
+    </div>
+    <span>© 2025 GS Materials</span>
+  </footer>
+
+  <script>
+    // View toggle
+    document.querySelectorAll('.view-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+
+    // Search filter
+    const searchInput = document.querySelector('.search-input');
+    searchInput.addEventListener('input', e => {
+      const q = e.target.value.toLowerCase();
+      document.querySelectorAll('.material-card').forEach(card => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        card.style.opacity = title.includes(q) || !q ? '1' : '0.3';
+      });
+    });
+  </script>
 </body>
 
 </html>
