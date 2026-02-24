@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../GS-AI-Lectures/css"
+		},
+		{
+			"path": "../GS-AI-Lectures/fonts"
+		},
+		{
+			"path": "../GS-AI-Lectures/images"
+		}
+	],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "GS-AI-Letctures",
+    "liveServer.settings.port": 5501
+  }
+}
